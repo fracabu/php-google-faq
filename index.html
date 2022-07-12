@@ -1,9 +1,6 @@
 
 
-<?php
-include 'index.php';
 
-?>
 
 
 
@@ -14,13 +11,26 @@ include 'index.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <?php
+    include 'dati.php';
 
+    ?>
 
 </head>
 <body>
     <?php
-    foreach ($dati as $dato ) {
-        
-    }
+
+    foreach ($dati as $faq) {
+    >
+    h1> <?php echo $faq['domanda']."<br>" ?> </h1>
+
+    p>
+        <?php echo $faq['risposta']."<br>" ?>
+    </p>
+
+    <?php
+        }
+
+    ?>
 </body>
 </html>
